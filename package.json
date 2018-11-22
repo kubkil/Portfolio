@@ -4,6 +4,13 @@
   "main": "index.js",
   "author": "Jakub Kilar <kuba.kilar@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "watch": "webpack --mode development --watch",
+    "develop": "webpack --mode development",
+    "build": "webpack --mode production",
+    "ngrok": "ngrok http 5500"
+  },
   "dependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
