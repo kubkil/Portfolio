@@ -12,5 +12,12 @@ html {
   font-family: 'Chakra Petch', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  outline: 0;
+}
+
 // IMPORT
 @import 'home.scss';
