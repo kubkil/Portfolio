@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "autoprefixer": "^9.3.1",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "cssnano": "^4.1.7",
@@ -32,6 +33,7 @@
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "imagemin": "^6.0.0",
     "mini-css-extract-plugin": "^0.4.5",
     "ngrok": "^3.1.0",
     "node-sass": "^4.10.0",
