@@ -19,6 +19,8 @@
     "not dead"
   ],
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   }
