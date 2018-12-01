@@ -11,7 +11,9 @@
     "build": "webpack --mode production",
     "ngrok": "ngrok http 5500"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gsap": "^2.0.2"
+  },
   "browserslist": [
     "> 0.5%",
     "last 4 versions",
