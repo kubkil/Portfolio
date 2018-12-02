@@ -46,6 +46,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.svg$/,
+        use: "file-loader?name=[name].[ext]&outputPath=./img/",
+      },
+      {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
