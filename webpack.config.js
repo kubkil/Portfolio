@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 
@@ -16,14 +16,14 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
             options: {
               minimize: true,
               attrs: ['img:src', 'source:srcset', 'img:data-src', 'source:data-srcset']
@@ -35,41 +35,41 @@ module.exports = {
         test: /\.(png|jpe?g)/i,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
             options: {
-              name: "./img/[name].[ext]",
+              name: './img/[name].[ext]',
               limit: 10000
             }
           },
           {
-            loader: "img-loader"
+            loader: 'img-loader'
           }
         ]
       },
       {
         test: /\.svg$/,
-        use: "file-loader?name=[name].[ext]&outputPath=./img/",
+        use: 'file-loader?name=[name].[ext]&outputPath=./img/',
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
         ]
       }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
+      template: './src/index.html',
+      filename: './index.html'
     }),
     new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     })
   ]
 };
