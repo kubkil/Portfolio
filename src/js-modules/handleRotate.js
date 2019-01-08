@@ -13,12 +13,12 @@ const handleRotate = (() => {
   });
 
   let degree = 120;
-  const resetRotation = () => {
+  const rotate = () => {
     TweenLite.to(menu, 0.5, { rotation: degree });
     degree += 120;
   };
 
-  face.addEventListener('click', resetRotation);
+  face.addEventListener('click', rotate);
 })();
 
 export default handleRotate;
