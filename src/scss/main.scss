@@ -17,6 +17,9 @@ a {
   color: inherit;
   cursor: pointer;
   outline: 0;
+  &:focus {
+    outline: thin dotted;
+  }
 }
 
 // IMPORT
