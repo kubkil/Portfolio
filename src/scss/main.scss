@@ -12,10 +12,6 @@ html {
   font-family: 'Chakra Petch', sans-serif;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -30,4 +26,5 @@ a {
 @import 'home.scss';
 @import 'home-face.scss';
 @import 'home-typing.scss';
+@import 'about.scss';
 @import 'gallery.scss';
