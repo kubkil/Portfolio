@@ -1,0 +1,21 @@
+.home__face {
+  transform-origin: center;
+  transform: rotate(30deg);
+  pointer-events: auto;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.home__face-color1 {
+  fill: #ffce00;
+}
+
+.home__face-color2 {
+  fill: #ffb100;
+}
+
+.home__face-color3 {
+  fill: #ffe454;
+}
