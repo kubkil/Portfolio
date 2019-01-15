@@ -1,0 +1,55 @@
+.home__heading-char1,
+.home__heading-char2,
+.home__heading-char3,
+.home__heading-char4,
+.home__heading-char5 {
+  color: transparent;
+  border-right: 0.2rem solid transparent;
+  animation: typing 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.home__heading-char1 {
+  animation-delay: 0.4s;
+}
+
+.home__heading-char2 {
+  animation-delay: 0.8s;
+}
+
+.home__heading-char3 {
+  animation-delay: 1.2s;
+}
+
+.home__heading-char4 {
+  animation-delay: 1.6s;
+}
+
+.home__heading-char5 {
+  padding-right: 2px;
+  animation: typing 1s, blink 1s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes typing {
+  from,
+  to {
+    color: #000;
+    border-color: transparent;
+  }
+  70% {
+    color: #000;
+    border-color: #000;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: #000;
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
