@@ -5,3 +5,11 @@
 .portfolio__heading {
   text-align: center;
 }
+.portfolio__gallery {
+  display: grid;
+  // max-width: 1600px;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
