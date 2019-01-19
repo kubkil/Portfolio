@@ -13,3 +13,11 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.portfolio__picture {
+  max-width: 952px;
+  width: 100%;
+  // cursor: pointer;
+  position: relative;
+  font-size: 0;
+}
