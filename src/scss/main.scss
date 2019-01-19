@@ -13,6 +13,13 @@
 
 html {
   font-family: 'Chakra Petch', sans-serif;
+  @media screen and (min-width: 20rem) {
+    font-size: calc(1rem + 0.25 * ((100vw - 20rem) / 60));
+  }
+
+  @media screen and (min-width: 80rem) {
+    font-size: 1.25rem;
+  }
 }
 
 h2 {
