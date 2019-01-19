@@ -12,7 +12,8 @@
     "ngrok": "ngrok http 5500"
   },
   "dependencies": {
-    "gsap": "^2.0.2"
+    "gsap": "^2.0.2",
+    "smoothscroll-polyfill": "^0.4.3"
   },
   "browserslist": [
     "> 0.5%",
