@@ -3,9 +3,12 @@
   height: 100vh;
   overflow: hidden;
   background: #567dbf;
-  position: relative;
-  display: grid;
+  // display: grid;
+  // justify-content: center;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-content: space-around;
 }
 
 .home__heading {
