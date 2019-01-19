@@ -59,3 +59,14 @@
   transform: translate(-50%, -50%);
   display: block;
 }
+
+.portfolio__text {
+  position: absolute;
+  bottom: 5%;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
