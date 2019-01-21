@@ -12,6 +12,7 @@
     "ngrok": "ngrok http 5500"
   },
   "dependencies": {
+    "fullpage.js": "^3.0.4",
     "gsap": "^2.0.2",
     "smoothscroll-polyfill": "^0.4.3"
   },
