@@ -29,6 +29,8 @@
 .home__menu {
   height: 50vh;
   transform: rotate(-30deg);
+  overflow: visible;
+  position: fixed;
 }
 
 .home__cake {
