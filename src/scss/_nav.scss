@@ -29,3 +29,25 @@
   stroke: #000;
   stroke-width: 3px;
 }
+
+.nav__face {
+  transform-origin: center;
+  transform: rotate(30deg);
+  pointer-events: auto;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.nav__face-color1 {
+  fill: #ffce00;
+}
+
+.nav__face-color2 {
+  fill: #ffb100;
+}
+
+.nav__face-color3 {
+  fill: #ffe454;
+}
