@@ -2,16 +2,12 @@ import TweenLite, { TimelineLite } from 'gsap/TweenMax';
 
 const handleScale = (() => {
   const menu = document.querySelector('.home__links-container');
+  const mq = window.matchMedia('(min-width: 450px)');
   const tl = new TimelineLite();
-
-  const winWidth = Math.min(
-    window.innerWidth,
-    document.documentElement.clientWidth
-  );
 
   let scale;
 
-  if (winWidth > 450) {
+  if (mq.matches) {
     scale = () => {
       tl.fromTo(menu, 0.4, { scale: 0 }, { scale: 1.2 })
         .to(menu, 0.3, {
