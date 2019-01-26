@@ -14,7 +14,7 @@ const handleTranslate = (() => {
 
   const widthChange = mediaQ => {
     if (mediaQ.matches) {
-  pieMenu.addEventListener('click', translate);
+      pieMenu.addEventListener('click', translate);
       console.log('listening');
     } else {
       pieMenu.removeEventListener('click', translate);
