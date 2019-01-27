@@ -9,15 +9,15 @@ const handleScale = (() => {
 
   if (mq.matches) {
     scale = () => {
-      tl.fromTo(menu, 0.4, { scale: 0 }, { scale: 1.2 })
-        .to(menu, 0.3, {
+      tl.fromTo(nav, 0.4, { scale: 0 }, { scale: 1.2 })
+        .to(nav, 0.3, {
           scale: 1
         })
         .delay(0.8);
     };
   } else {
     scale = () => {
-      TweenLite.from(menu, 0.4, { scale: 0 }).delay(0.8);
+      TweenLite.from(nav, 0.4, { scale: 0 }).delay(0.8);
     };
   }
 
