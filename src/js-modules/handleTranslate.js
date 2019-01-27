@@ -3,6 +3,8 @@ import { TimelineLite } from 'gsap/TweenMax';
 const handleTranslate = (() => {
   const homeSection = document.querySelector('.home');
   const pieMenu = document.querySelector('.nav__menu');
+  const xTo = -(0.45 * homeSection.clientWidth);
+  const yTo = -(0.4 * homeSection.clientHeight);
   const tl = new TimelineLite();
 
   const translate = () => {
