@@ -12,7 +12,7 @@
     "ngrok": "ngrok http 5500"
   },
   "dependencies": {
-    "dotenv": "^6.2.0",
+    "dotenv-webpack": "^1.7.0",
     "fullpage.js": "^3.0.4",
     "gsap": "^2.0.2",
     "smoothscroll-polyfill": "^0.4.3"
