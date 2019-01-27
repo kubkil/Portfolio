@@ -7,6 +7,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
+  overflow: hidden;
+  @include respond-to(small) {
+    overflow: visible;
+  }
   @include respond-to(large) {
     position: fixed;
   }
@@ -16,7 +20,9 @@
   height: 50vh;
   transform: rotate(-30deg);
   overflow: visible;
+  @include respond-to(small) {
   position: fixed;
+}
 }
 
 .nav__icon {
