@@ -8,21 +8,21 @@ const handleRotate = (() => {
   const portfolioLink = document.querySelector('.nav__link--portfolio');
   const contactLink = document.querySelector('.nav__link--contact');
 
-  TweenLite.set(menu, { svgOrigin: '250 250' });
+  TweenLite.set(nav, { svgOrigin: '250 250' });
 
-  Draggable.create(menu, {
+  Draggable.create(nav, {
     type: 'rotation',
     dragClickables: true
   });
 
   let degree = 120;
   const rotate = () => {
-    TweenLite.to(menu, 0.5, { rotation: degree });
+    TweenLite.to(nav, 0.5, { rotation: degree });
     degree += 120;
   };
 
   const rotateLink = matrix => {
-    TweenLite.to(menu, 0.5, { transform: matrix });
+    TweenLite.to(nav, 0.5, { transform: matrix });
   };
 
   face.addEventListener('click', rotate);
