@@ -1,6 +1,7 @@
 import { TimelineLite } from 'gsap/TweenMax';
 
 const handleTranslate = (() => {
+  const homeSection = document.querySelector('.home');
   const pieMenu = document.querySelector('.nav__menu');
   const tl = new TimelineLite();
 
