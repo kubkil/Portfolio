@@ -21,8 +21,8 @@
   transform: rotate(-30deg);
   overflow: visible;
   @include respond-to(small) {
-  position: fixed;
-}
+    position: fixed;
+  }
 }
 
 .nav__icon {
