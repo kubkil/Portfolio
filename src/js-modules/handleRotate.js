@@ -3,6 +3,10 @@ import Draggable from 'gsap/Draggable';
 
 const handleRotate = (() => {
   const nav = document.querySelector('.nav__links-container');
+  const face = document.querySelector('.nav__face');
+  const aboutLink = document.querySelector('.nav__link--about');
+  const portfolioLink = document.querySelector('.nav__link--portfolio');
+  const contactLink = document.querySelector('.nav__link--contact');
 
   TweenLite.set(menu, { svgOrigin: '250 250' });
 
