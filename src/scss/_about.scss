@@ -4,6 +4,7 @@
 
 .about__heading {
   text-align: center;
+  @include margin-bottom-heading;
 }
 
 .about__text {
