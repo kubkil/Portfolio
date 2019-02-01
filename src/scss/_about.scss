@@ -1,5 +1,5 @@
 .about {
-  padding: 3rem 1rem;
+  @include padding-section;
 }
 
 .about__heading {
