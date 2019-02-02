@@ -3,3 +3,8 @@
     @content;
   }
 }
+
+@mixin padding-section {
+  padding: 3rem 2rem;
+}
+
