@@ -5,3 +5,8 @@
     padding-top: 3rem;
   }
 }
+
+.contact__heading {
+  text-align: center;
+  @include margin-bottom-heading;
+}
