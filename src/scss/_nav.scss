@@ -8,7 +8,7 @@
   transform: translate(-50%, -50%);
   z-index: 999;
   overflow: hidden;
-  @include respond-to(small) {
+  @media screen and (min-width: 450px) {
     overflow: visible;
   }
   @include respond-to(large) {
