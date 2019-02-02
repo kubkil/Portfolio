@@ -4,8 +4,7 @@ const handleFullpage = (() => {
   const myFullpage = new Fullpage('#fullpage', {
     licenseKey: process.env.LICENSE,
     responsiveWidth: 1280,
-    verticalCentered: false,
-    scrollBar: true
+    verticalCentered: false
   });
 
   const aboutSection = document.querySelector('.about');
