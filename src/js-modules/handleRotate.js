@@ -7,6 +7,9 @@ const handleRotate = (() => {
   const aboutLink = document.querySelector('.nav__link--about');
   const portfolioLink = document.querySelector('.nav__link--portfolio');
   const contactLink = document.querySelector('.nav__link--contact');
+  const aboutSection = document.querySelector('.about');
+  const portfolioSection = document.querySelector('.portfolio');
+  const contactSection = document.querySelector('.contact');
 
   TweenLite.set(nav, { svgOrigin: '250 250' });
 
