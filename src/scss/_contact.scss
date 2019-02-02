@@ -1,0 +1,7 @@
+.contact {
+  @include padding-section;
+  padding-top: 0;
+  @include respond-to(large) {
+    padding-top: 3rem;
+  }
+}
