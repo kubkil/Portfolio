@@ -1,6 +1,6 @@
 .portfolio {
-  @include padding-section;
   padding-top: 0;
+  @include padding-section;
   @include respond-to(large) {
     padding-top: 3rem;
   }
