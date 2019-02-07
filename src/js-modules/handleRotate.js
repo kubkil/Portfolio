@@ -28,6 +28,21 @@ const handleRotate = (() => {
     TweenLite.to(nav, 0.5, { transform: matrix });
   };
 
+  const rotateOnScroll = mutation => {
+    if (mutation['0'].target.classList.contains('active')) {
+      if (mutation['0'].target.matches('.about')) {
+        rotateLink('matrix(1,0,0,1,0,0)');
+      } else if (mutation['0'].target.matches('.portfolio')) {
+        rotateLink(
+          'matrix(-0.49999,0.86602,-0.86602,-0.49999,591.5063509461096,158.49364905389027)'
+        );
+      } else if (mutation['0'].target.matches('.contact')) {
+        rotateLink(
+          'matrix(-0.5,-0.86602,0.86602,-0.5,158.4936490538905,591.5063509461097)'
+        );
+      }
+    }
+  };
   face.addEventListener('click', rotate);
 
   aboutLink.addEventListener('click', () => rotateLink('matrix(1,0,0,1,0,0)'));
