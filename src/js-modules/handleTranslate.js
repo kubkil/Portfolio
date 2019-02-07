@@ -15,6 +15,11 @@ const handleTranslate = (() => {
       animation.play();
     }
   };
+
+  const observer = new MutationObserver(toggleTranslate);
+
+  const observerOptions = {
+    attributes: true
   };
 
   const widthChange = mediaQ => {
