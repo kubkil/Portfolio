@@ -11,6 +11,11 @@ const handleTranslate = (() => {
     .reverse();
 
   const translate = () => {
+    if (animation.reversed) {
+      animation.play();
+    }
+  };
+
   const toggleTranslate = mutation => {
     if (mutation['0'].target.classList.contains('active')) {
       animation.reverse();
