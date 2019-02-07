@@ -24,11 +24,11 @@ const handleTranslate = (() => {
 
   const widthChange = mediaQ => {
     if (mediaQ.matches) {
+      observer.observe(homeSection, observerOptions);
       pieMenu.addEventListener('click', translate);
-      console.log('listening');
     } else {
+      observer.disconnect();
       pieMenu.removeEventListener('click', translate);
-      console.log('not listening');
     }
   };
 
