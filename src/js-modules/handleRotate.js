@@ -50,6 +50,22 @@ const handleRotate = (() => {
     attributes: true
   };
 
+  const widthChange = mediaQ => {
+    if (mediaQ.matches) {
+      observer.observe(aboutSection, observerOptions);
+      observer.observe(portfolioSection, observerOptions);
+      observer.observe(contactSection, observerOptions);
+    } else {
+      observer.disconnect();
+    }
+  };
+
+  if (matchMedia) {
+    const mq = window.matchMedia('(min-width: 1280px');
+    mq.addListener(widthChange);
+    widthChange(mq);
+  }
+
   face.addEventListener('click', rotate);
 
   aboutLink.addEventListener('click', () => rotateLink('matrix(1,0,0,1,0,0)'));
