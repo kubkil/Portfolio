@@ -43,6 +43,13 @@ const handleRotate = (() => {
       }
     }
   };
+
+  const observer = new MutationObserver(rotateOnScroll);
+
+  const observerOptions = {
+    attributes: true
+  };
+
   face.addEventListener('click', rotate);
 
   aboutLink.addEventListener('click', () => rotateLink('matrix(1,0,0,1,0,0)'));
