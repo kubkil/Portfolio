@@ -8,8 +8,13 @@ const handleTranslate = (() => {
   const tl = new TimelineLite();
 
   const translate = () => {
-    tl.to(pieMenu, 1, { scale: 0.3 });
-    tl.to(pieMenu, 1, { x: xTo, y: yTo }, 0);
+  const toggleTranslate = mutation => {
+    if (mutation['0'].target.classList.contains('active')) {
+      animation.reverse();
+    } else {
+      animation.play();
+    }
+  };
   };
 
   const widthChange = mediaQ => {
