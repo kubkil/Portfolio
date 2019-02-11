@@ -33,4 +33,20 @@
   grid-row-gap: 1rem;
   margin-top: 2rem;
 }
+
+.about__html-logo,
+.about__sass-logo,
+.about__js-logo,
+.about__webpack-logo,
+.about__yarn-logo,
+.about__git-logo {
+  justify-self: center;
+  width: 70px;
+  @include respond-to(medium) {
+    width: 80px;
+  }
+  @include respond-to(large) {
+    width: 90px;
+  }
+  height: auto;
 }
