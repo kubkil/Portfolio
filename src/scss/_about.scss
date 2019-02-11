@@ -1,5 +1,17 @@
 .about {
   @include padding-section;
+  @include respond-to(medium) {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-right: 250px solid $colorBlue;
+      border-top: 250px solid transparent;
+}
+  }
 }
 
 .about__heading {
