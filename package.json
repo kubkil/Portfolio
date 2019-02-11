@@ -14,8 +14,7 @@
   "dependencies": {
     "dotenv-webpack": "^1.7.0",
     "fullpage.js": "^3.0.4",
-    "gsap": "^2.0.2",
-    "smoothscroll-polyfill": "^0.4.3"
+    "gsap": "^2.0.2"
   },
   "browserslist": [
     "> 0.5%",
