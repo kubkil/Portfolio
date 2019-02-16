@@ -244,8 +244,21 @@
       </section>
       <section class="contact section" id="contact" data-anchor="page4">
         <h2 class="contact__heading">Contact</h2>
+        <form action="/" method="POST" class="contact__form">
+          <div class="contact__row">
             <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="contact__name" />
+          </div>
+          <div class="contact__row">
             <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact__email"
+            />
+          </div>
+          <div class="contact__row">
             <label for="message">Message:</label>
             <textarea
               id="message"
@@ -254,6 +267,7 @@
               rows="10"
             ></textarea>
           </div>
+          <button role="submit">Send</button>
         </form>
       </section>
       <footer class="footer section fp-auto-height">
