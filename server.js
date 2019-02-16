@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/dist')));
 
-app.post('/', (res, req) => {
+app.post('/', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     secure: true,
