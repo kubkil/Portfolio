@@ -46,4 +46,4 @@ app.post('/', (req, res) => {
   });
 });
 
-app.listen(PORT, () => console.log('works'));
+app.listen(PORT, () => console.log('running'));
