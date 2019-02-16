@@ -247,7 +247,13 @@
         <form action="/" method="POST" class="contact__form">
           <div class="contact__row">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" class="contact__name" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact__name"
+              required
+            />
           </div>
           <div class="contact__row">
             <label for="email">Email:</label>
@@ -256,6 +262,7 @@
               id="email"
               name="email"
               class="contact__email"
+              required
             />
           </div>
           <div class="contact__row">
@@ -265,6 +272,7 @@
               name="message"
               cols="30"
               rows="10"
+              required
             ></textarea>
           </div>
           <button role="submit">Send</button>
