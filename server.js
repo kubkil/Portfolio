@@ -32,10 +32,8 @@ app.post('/', (req, res) => {
   const mailOptions = {
     from: `${req.body.email}`,
     to: process.env.GMAIL_USER,
-    subject: `New message from ${req.body.name} (${
-      req.body.email
-    }) at kubakilar.pl`,
-    text: `${req.body.name} says:
+    subject: `New message from contact form at kubakilar.pl`,
+    text: `${req.body.name} <${req.body.email}> says:
     ${req.body.message}`
   };
 
