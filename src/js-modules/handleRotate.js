@@ -1,5 +1,4 @@
 import TweenLite from 'gsap/TweenMax';
-import Draggable from 'gsap/Draggable';
 
 const handleRotate = (() => {
   const nav = document.querySelector('.nav__links-container');
@@ -12,11 +11,6 @@ const handleRotate = (() => {
   const contactSection = document.querySelector('.contact');
 
   TweenLite.set(nav, { svgOrigin: '250 250' });
-
-  Draggable.create(nav, {
-    type: 'rotation',
-    dragClickables: true
-  });
 
   let degree = 120;
   const rotate = () => {
