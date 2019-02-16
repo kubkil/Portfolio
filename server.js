@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, '/dist')));
 
 app.post('/', (res, req) => {
   const transporter = nodemailer.createTransport({
