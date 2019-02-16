@@ -12,9 +12,13 @@
     "ngrok": "ngrok http 5500"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
     "dotenv-webpack": "^1.7.0",
+    "express": "^4.16.4",
     "fullpage.js": "^3.0.4",
-    "gsap": "^2.0.2"
+    "gsap": "^2.0.2",
+    "nodemailer": "^5.1.1"
   },
   "browserslist": [
     "> 0.5%",
