@@ -36,6 +36,10 @@ a {
   }
 }
 
+abbr {
+  text-decoration: none;
+}
+
 // IMPORT
 @import 'fullpage.scss';
 @import 'nav.scss';
