@@ -246,7 +246,9 @@
         <h2 class="contact__heading">Contact</h2>
         <form action="/" method="POST" class="contact__form">
           <div class="contact__row">
-            <label for="name" class="contact__label">Name:</label>
+            <label for="name" class="contact__label"
+              >Name:<abbr title="This field is mandatory">*</abbr></label
+            >
             <input
               type="text"
               id="name"
@@ -257,7 +259,9 @@
             />
           </div>
           <div class="contact__row">
-            <label for="email" class="contact__label">Email:</label>
+            <label for="email" class="contact__label"
+              >Email:<abbr title="This field is mandatory">*</abbr></label
+            >
             <input
               type="email"
               id="email"
@@ -268,7 +272,9 @@
             />
           </div>
           <div class="contact__row">
-            <label for="message" class="contact__label">Message:</label>
+            <label for="message" class="contact__label"
+              >Message:<abbr title="This field is mandatory">*</abbr></label
+            >
             <textarea
               id="message"
               name="message"
