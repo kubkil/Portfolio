@@ -39,7 +39,7 @@ app.post('/', (req, res) => {
 
   transporter.sendMail(mailOptions, (error, response) => {
     if (error) {
-      console.error('error: ', error);
+      console.log('error: ', error);
     } else {
       console.log('response: ', response);
     }
