@@ -18,6 +18,7 @@ const handleValidation = (() => {
     }
   };
 
+  form.addEventListener('submit', e => sendForm(e));
 })();
 
 export default handleValidation;
