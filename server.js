@@ -8,7 +8,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static(path.join(__dirname, '/dist')));
 
 app.get('/', (req, res) => {
