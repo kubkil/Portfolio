@@ -20,6 +20,7 @@ const handleValidation = (() => {
         email: email.value,
         message: message.value
       };
+      const jsonData = JSON.stringify(data);
       // const formData = new FormData(this);
       // const searchParams = new URLSearchParams();
 
