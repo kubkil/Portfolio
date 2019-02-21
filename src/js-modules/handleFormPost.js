@@ -30,11 +30,9 @@ const handleValidation = (() => {
 
       fetch(url, {
         method: method.toUpperCase(),
-        body: data
+        body: jsonData
       })
-        // .then(res => res.json())
-        .then(res => res.text())
-        .then(text => console.log(text))
+        .then(res => res.json())
         .catch(err => console.log(err));
     }
   };
