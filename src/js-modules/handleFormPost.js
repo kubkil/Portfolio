@@ -15,7 +15,11 @@ const handleValidation = (() => {
       }
       const url = form.getAttribute('action');
       const method = form.getAttribute('method');
-      console.log(dataJSON);
+      const data = {
+        name: name.value,
+        email: email.value,
+        message: message.value
+      };
 
       fetch(url, {
         method: method.toUpperCase(),
