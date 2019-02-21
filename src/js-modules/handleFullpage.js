@@ -20,11 +20,9 @@ const handleFullpage = (() => {
         )
       ) {
         sections.forEach(section => section.classList.remove('fp-auto-height'));
-        console.log('class removed');
       }
     } else {
       sections.forEach(section => section.classList.add('fp-auto-height'));
-      console.log('class added');
     }
   };
 
