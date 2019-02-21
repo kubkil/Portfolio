@@ -2,7 +2,7 @@ const handleValidation = (() => {
   const validationInput = document.querySelector('#validation');
   const form = document.querySelector('.contact__form');
   const name = document.querySelector('#name');
-  const email = document.querySelector('#name');
+  const email = document.querySelector('#email');
   const message = document.querySelector('#message');
 
   const sendForm = event => {
