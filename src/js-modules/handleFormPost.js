@@ -25,6 +25,9 @@ const handleValidation = (() => {
 
       fetch(url, {
         method: method.toUpperCase(),
+        headers: {
+          'Content-Type': 'application/json'
+        },
         body: jsonData
       })
         .then(res => res.json())
