@@ -8,11 +8,6 @@ const handleValidation = (() => {
   const sendForm = event => {
     event.preventDefault();
     if (validationInput.value === '15') {
-      const data = new FormData(form);
-      let dataJSON = {};
-      for (const [key, value] of data) {
-        dataJSON[key] = value;
-      }
       const url = form.getAttribute('action');
       const method = form.getAttribute('method');
       const data = {
