@@ -44,8 +44,12 @@ app.post('/', (req, res) => {
   transporter.sendMail(mailOptions, (error, response) => {
     if (error) {
       console.log('error: ', error);
+      // res.status(502).send('Bad Gateway');
+      res.sendStatus(502);
     } else {
       console.log('response: ', response);
+      // res.status(200).send('OK');
+      res.sendStatus(200);
     }
   });
 });
