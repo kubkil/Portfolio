@@ -16,12 +16,6 @@ const handleValidation = (() => {
         message: message.value
       };
       const jsonData = JSON.stringify(data);
-      // const formData = new FormData(this);
-      // const searchParams = new URLSearchParams();
-
-      // for (const pair of formData) {
-      //   searchParams.append(pair[0], pair[1]);
-      // }
 
       fetch(url, {
         method: method.toUpperCase(),
