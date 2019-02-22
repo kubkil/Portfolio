@@ -35,8 +35,10 @@ app.post('/', (req, res) => {
     from: req.body.email,
     to: process.env.GMAIL_USER,
     subject: `New message from contact form at kubakilar.pl`,
-    text: `${req.body.name} <${req.body.email}> says:
-    ${req.body.message}`
+    html: `<p style="font-size:16px;font-weight:bold">${req.body.name} &lt;${
+      req.body.email
+    }&gt; says:</p>
+    <p style="font-size:16px">${req.body.message}</p>`
   };
 
   transporter.sendMail(mailOptions, (error, response) => {
