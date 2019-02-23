@@ -7,6 +7,8 @@ const handleScale = (() => {
 
   let scale;
 
+  TweenLite.set(nav, { svgOrigin: '250 250' });
+
   if (mq.matches) {
     scale = () => {
       tl.fromTo(nav, 0.4, { scale: 0 }, { scale: 1.2 })
