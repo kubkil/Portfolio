@@ -23,7 +23,7 @@ const handleScale = (() => {
     };
   }
 
-  document.addEventListener('DOMContentLoaded', scale);
+  window.onload = scale();
 })();
 
 export default handleScale;
