@@ -23,11 +23,7 @@ const handleValidation = (() => {
           'Content-Type': 'application/json'
         },
         body: jsonData
-      })
-        // .then(res => res.json())
-        // .then(res => res.text())
-        // .then(text => console.log(text))
-        .catch(err => console.log(err));
+      }).catch(err => console.log(err));
     }
   };
 
