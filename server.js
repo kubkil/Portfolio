@@ -8,8 +8,6 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/dist')));
 
@@ -44,11 +42,9 @@ app.post('/', (req, res) => {
   transporter.sendMail(mailOptions, (error, response) => {
     if (error) {
       console.log('error: ', error);
-      // res.status(502).send('Bad Gateway');
       res.sendStatus(502);
     } else {
       console.log('response: ', response);
-      // res.status(200).send('OK');
       res.sendStatus(200);
     }
   });
