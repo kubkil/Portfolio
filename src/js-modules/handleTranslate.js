@@ -8,7 +8,7 @@ const handleTranslate = (() => {
   const yTo = -(0.4 * homeSection.clientHeight);
   const tl = new TimelineLite();
   const animation = tl
-    .to(pieMenu, 0.7, { scale: 0.3, x: xTo, y: yTo }, 0)
+    .to(pieMenu, 0.7, { scale: 0.35, x: xTo, y: yTo }, 0)
     .reverse();
 
   const translate = () => {
