@@ -34,10 +34,10 @@ const handleTranslate = (() => {
   const widthChange = mediaQ => {
     if (mediaQ.matches) {
       observer.observe(homeSection, observerOptions);
-      pieMenu.addEventListener('click', translate);
+      pieLink.addEventListener('click', translate);
     } else {
       observer.disconnect();
-      pieMenu.removeEventListener('click', translate);
+      pieLink.removeEventListener('click', translate);
     }
   };
 
