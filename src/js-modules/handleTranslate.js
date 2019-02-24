@@ -4,6 +4,7 @@ const handleTranslate = (() => {
   const homeSection = document.querySelector('.home');
   const pieMenu = document.querySelector('.nav__menu');
   const pieLink = document.querySelector('.nav__link');
+  const xTo = -(0.44 * homeSection.clientWidth);
   const yTo = -(0.4 * homeSection.clientHeight);
   const tl = new TimelineLite();
   const animation = tl
