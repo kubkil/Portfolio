@@ -5,6 +5,26 @@
   background: $colorBlue;
   display: flex;
   justify-content: center;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-right: 30vw solid rgba(26, 74, 156, 0.5);
+    border-top: 30vw solid transparent;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 30vw solid rgba(125, 158, 214, 0.5);
+    border-bottom: 30vw solid transparent;
+  }
 }
 
 .home__heading {
