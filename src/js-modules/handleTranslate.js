@@ -5,7 +5,7 @@ const handleTranslate = (() => {
   const pieMenu = document.querySelector('.nav__menu');
   const pieLink = document.querySelector('.nav__link');
   const xTo = -(0.44 * homeSection.clientWidth);
-  const yTo = -(0.4 * homeSection.clientHeight);
+  const yTo = -(0.39 * homeSection.clientHeight);
   const tl = new TimelineLite();
   const animation = tl
     .to(pieMenu, 0.7, { scale: 0.35, x: xTo, y: yTo }, 0)
