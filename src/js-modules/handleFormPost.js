@@ -25,7 +25,17 @@ const handleValidation = (() => {
           'Content-Type': 'application/json'
         },
         body: jsonData
-      }).catch(err => console.log(err));
+      })
+        .then(res => {
+          if (res.status !== 200) {
+            form.style.display = 'none';
+            error.style.display = 'block';
+          } else {
+            form.style.display = 'none';
+            success.style.display = 'block';
+          }
+        })
+        .catch(err => console.log(err));
     }
   };
 
