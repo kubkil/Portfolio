@@ -4,6 +4,8 @@ const handleValidation = (() => {
   const name = document.querySelector('#name');
   const email = document.querySelector('#email');
   const message = document.querySelector('#message');
+  const error = document.querySelector('.contact__error');
+  const success = document.querySelector('.contact__success');
 
   const sendForm = event => {
     event.preventDefault();
