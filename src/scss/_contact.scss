@@ -51,3 +51,29 @@
   border-radius: 5px;
   background: none;
 }
+
+.contact__wrong-answer,
+.contact__success,
+.contact__error {
+  display: none;
+}
+
+.contact__error,
+.contact__success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate((-50%, -50%));
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.contact__error {
+  color: rgb(255, 0, 0);
+}
+
+.contact__success {
+  color: rgb(0, 107, 32);
+}
