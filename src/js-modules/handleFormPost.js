@@ -7,6 +7,7 @@ const handleValidation = (() => {
   const error = document.querySelector('.contact__error');
   const success = document.querySelector('.contact__success');
   const wrongAnswer = document.querySelector('.contact__wrong-answer');
+  const button = document.querySelector('.contact__button');
 
   const sendForm = event => {
     event.preventDefault();
