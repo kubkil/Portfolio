@@ -6,7 +6,7 @@ const handleScale = (() => {
   const tl = new TimelineLite();
 
   let scale;
-
+  // https://greensock.com/forums/topic/19467-draggable-transform-origin/?tab=comments#comment-90427
   TweenLite.set(nav, { svgOrigin: '250 250' });
 
   if (mq.matches) {
