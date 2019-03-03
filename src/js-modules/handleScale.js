@@ -23,7 +23,8 @@ const handleScale = (() => {
     };
   }
 
-  window.onload = scale();
+  scale();
+  // window.onload = scale();
 })();
 
 export default handleScale;
