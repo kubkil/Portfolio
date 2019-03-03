@@ -22,6 +22,8 @@ const handleValidation = (() => {
       const jsonData = JSON.stringify(data);
 
       button.disabled = true;
+      button.classList.add('contact__button--loading');
+
       fetch(url, {
         method: method.toUpperCase(),
         headers: {
