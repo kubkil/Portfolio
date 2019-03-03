@@ -41,6 +41,9 @@ const handleValidation = (() => {
           }
         })
         .catch(err => console.log(err));
+    } else {
+      validationInput.value = '';
+      wrongAnswer.style.display = 'block';
     }
   };
 
