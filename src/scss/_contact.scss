@@ -52,6 +52,36 @@
   background: none;
 }
 
+.contact__button--loading {
+  position: relative;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.contact__button--loading::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, -50%) rotate(0deg);
+  content: '';
+  animation: rotateSingleLoading 0.3s infinite linear;
+  z-index: 10;
+}
+
+@keyframes rotateSingleLoading {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 .contact__wrong-answer,
 .contact__success,
 .contact__error {
