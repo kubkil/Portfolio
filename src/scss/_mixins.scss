@@ -5,7 +5,12 @@
 }
 
 @mixin padding-section {
+  padding: 2.3rem 2rem;
+  padding-bottom: 0;
+  @include respond-to(x-large) {
   padding: 3rem 2rem;
+    padding-bottom: 0;
+  }
 }
 
 @mixin margin-bottom-heading {
