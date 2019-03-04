@@ -14,10 +14,10 @@
 html {
   font-family: 'Chakra Petch', sans-serif;
   @media screen and (min-width: 320px) {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 960));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1080));
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1400px) {
     font-size: 20px;
   }
 }
