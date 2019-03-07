@@ -5,11 +5,7 @@
 .portfolio__heading {
   text-align: center;
   @include margin-bottom-heading;
-
-  @include respond-to(large) {
-    margin-bottom: 0;
   }
-}
 
 .portfolio__gallery-wrapper {
   display: flex;
