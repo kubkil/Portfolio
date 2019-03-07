@@ -53,12 +53,13 @@
 }
 
 // https://kursjs.pl/kurs/ajax/formularz-kontaktowy.php
+.contact__button--sending {
   position: relative;
   pointer-events: none;
   color: rgba(0, 0, 0, 0.1);
 }
 
-.contact__button--loading::after {
+.contact__button--sending::after {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -69,11 +70,11 @@
   border-right-color: rgba(0, 0, 0, 0.7);
   transform: translate(-50%, -50%) rotate(0deg);
   content: '';
-  animation: rotateSingleLoading 0.3s infinite linear;
+  animation: sending 0.3s infinite linear;
   z-index: 10;
 }
 
-@keyframes rotateSingleLoading {
+@keyframes sending {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
