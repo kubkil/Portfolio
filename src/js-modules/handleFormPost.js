@@ -9,6 +9,16 @@ const handleValidation = (() => {
   const wrongAnswer = document.querySelector('.contact__wrong-answer');
   const button = document.querySelector('.contact__button');
 
+  const changeFormDisplay = response => {
+    if (response.status !== 200) {
+      form.style.display = 'none';
+      error.style.display = 'block';
+    } else {
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }
+  };
+
   const sendForm = event => {
     event.preventDefault();
     if (validationInput.value === '15') {
@@ -31,15 +41,7 @@ const handleValidation = (() => {
         },
         body: jsonData
       })
-        .then(res => {
-          if (res.status !== 200) {
-            form.style.display = 'none';
-            error.style.display = 'block';
-          } else {
-            form.style.display = 'none';
-            success.style.display = 'block';
-          }
-        })
+        .then(res => changeFormDisplay(res))
         .catch(err => console.log(err));
     } else {
       validationInput.value = '';
