@@ -32,6 +32,9 @@
   top: 2%;
   font-size: 5rem;
   display: flex;
+  @media screen and (orientation: landscape) and (max-width: 768px) {
+    display: none;
+  }
 }
 
 // HOME TYPING
