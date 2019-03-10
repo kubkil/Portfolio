@@ -1,6 +1,7 @@
 import TweenLite, { TimelineLite } from 'gsap/TweenMax';
 
 const handleScale = (() => {
+  const nav = document.querySelector('.nav');
   const navLinks = document.querySelector('.nav__links-container');
   const mq = window.matchMedia('(min-width: 500px)');
   const tl = new TimelineLite();
