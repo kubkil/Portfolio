@@ -28,8 +28,8 @@ const handleScale = (() => {
     };
   }
 
-  scale();
-  // window.onload = scale();
+  window.addEventListener('load', showNav);
+  window.addEventListener('load', scale);
 })();
 
 export default handleScale;
