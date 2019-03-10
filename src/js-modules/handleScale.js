@@ -6,6 +6,10 @@ const handleScale = (() => {
   const mq = window.matchMedia('(min-width: 500px)');
   const tl = new TimelineLite();
 
+  const showNav = () => {
+    nav.style.opacity = '1';
+  };
+
   let scale;
   // https://greensock.com/forums/topic/19467-draggable-transform-origin/?tab=comments#comment-90427
   TweenLite.set(navLinks, { svgOrigin: '250 250' });
