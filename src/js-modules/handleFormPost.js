@@ -22,7 +22,7 @@ const handleValidation = (() => {
       const jsonData = JSON.stringify(data);
 
       button.disabled = true;
-      button.classList.add('contact__button--loading');
+      button.classList.add('contact__button--sending');
 
       fetch(url, {
         method: method.toUpperCase(),
