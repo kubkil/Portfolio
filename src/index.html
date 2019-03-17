@@ -298,14 +298,16 @@
             ></textarea>
           </div>
           <span class="contact__error contact__error--message"></span>
+          <div class="contact__row">
+            <label for="spam-prevention" class="contact__label"
               >Six plus nine equals:<abbr title="This field is mandatory"
                 >*</abbr
               ></label
             ><input
               type="number"
-              id="validation"
-              name="validation"
-              class="contact__input"
+              id="spam-prevention"
+              name="spam-prevention"
+              class="contact__input contact__input--spam-prevention"
               placeholder="Please give a correct digit"
               required
             />
@@ -315,8 +317,8 @@
           >
           <button type="submit" class="contact__button">Send</button>
         </form>
-        <p class="contact__success">Thanks!</p>
-        <p class="contact__error">
+        <p class="contact__post-success">Thanks!</p>
+        <p class="contact__post-error">
           Something went wrong. Please refresh and try again.
         </p>
       </section>
