@@ -41,12 +41,9 @@
 
 .nav__face {
   transform-origin: center;
+  // rotate to put face in the middle of pie menu
   transform: rotate(30deg);
-  pointer-events: auto;
-  &:hover,
-  &:focus {
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 .nav__face-color1 {
