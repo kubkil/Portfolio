@@ -1,4 +1,5 @@
 const handleFormPost = (() => {
+  const preventSpam = document.querySelector('#spam-prevention');
   const form = document.querySelector('.contact__form');
   const name = document.querySelector('#name');
   const email = document.querySelector('#email');
@@ -20,7 +21,7 @@ const handleFormPost = (() => {
 
   const sendForm = event => {
     event.preventDefault();
-    if (validationInput.value === '15') {
+    if (preventSpam.value === '15') {
       const url = form.getAttribute('action');
       const method = form.getAttribute('method');
       const data = {
@@ -43,7 +44,7 @@ const handleFormPost = (() => {
         .then(res => changeFormDisplay(res))
         .catch(err => console.log(err));
     } else {
-      validationInput.value = '';
+      preventSpam.value = '';
       wrongAnswer.style.display = 'block';
     }
   };
