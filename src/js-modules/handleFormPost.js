@@ -1,5 +1,4 @@
-const handleValidation = (() => {
-  const validationInput = document.querySelector('#validation');
+const handleFormPost = (() => {
   const form = document.querySelector('.contact__form');
   const name = document.querySelector('#name');
   const email = document.querySelector('#email');
@@ -52,4 +51,4 @@ const handleValidation = (() => {
   form.addEventListener('submit', e => sendForm(e));
 })();
 
-export default handleValidation;
+export default handleFormPost;
