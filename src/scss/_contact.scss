@@ -113,6 +113,14 @@
   text-align: center;
 }
 
+.contact__error {
+  display: block;
+  visibility: hidden;
+  margin: 0.7rem 0;
+  font-size: 0.9rem;
+  color: #ff0000;
+}
+
 // https://kursjs.pl/kurs/ajax/formularz-kontaktowy.php
 .contact__button--sending {
   position: relative;
