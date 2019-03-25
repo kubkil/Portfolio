@@ -62,10 +62,13 @@
   color: white;
   font-size: 3.5rem;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
+  @include respond-to(small) {
+    top: 40%;
+}
 }
 
 .portfolio__text {
