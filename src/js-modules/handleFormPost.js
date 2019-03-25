@@ -46,7 +46,6 @@ const handleFormPost = (() => {
 
   const sendForm = event => {
     event.preventDefault();
-    if (preventSpam.value === '15') {
       const url = form.getAttribute('action');
       const method = form.getAttribute('method');
       const data = {
@@ -68,10 +67,6 @@ const handleFormPost = (() => {
       })
         .then(res => changeFormDisplay(res))
         .catch(err => console.log(err));
-    } else {
-      preventSpam.value = '';
-      wrongAnswer.style.display = 'block';
-    }
   };
 
   form.addEventListener('submit', e => sendForm(e));
