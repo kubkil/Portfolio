@@ -36,7 +36,7 @@
   padding: 5px;
   &::placeholder {
     font-size: 0.9rem;
-}
+  }
 }
 
 .contact__input--message {
@@ -71,15 +71,6 @@
 
 .contact__input--ok {
   border: 1.5px solid #2b800a;
-}
-
-@keyframes sending {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
 
 .contact__wrong-answer,
