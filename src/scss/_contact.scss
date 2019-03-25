@@ -15,7 +15,6 @@
 .contact__row {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
   @media screen and (min-width: 550px) {
     flex-direction: row;
   }
