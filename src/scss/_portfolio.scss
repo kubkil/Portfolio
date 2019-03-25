@@ -72,11 +72,14 @@
 }
 
 .portfolio__text {
+  bottom: 5%;
   position: absolute;
-  bottom: 7%;
   font-size: 1.3rem;
   color: #fff;
   font-weight: 700;
   text-align: center;
   width: 100%;
+  @include respond-to(small) {
+    bottom: 8%;
+  }
 }
