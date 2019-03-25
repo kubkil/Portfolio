@@ -1,3 +1,4 @@
+import { hasError, showError } from './handleValidation';
 const handleFormPost = (() => {
   const preventSpam = document.querySelector('#spam-prevention');
   const form = document.querySelector('.contact__form');
