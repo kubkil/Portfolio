@@ -80,20 +80,6 @@ const handleValidation = (() => {
       true
     )
   );
-
-  // document.addEventListener(
-  //   'blur',
-  //   e => {
-  //     const error = hasError(e.target);
-
-  //     if (error) {
-  //       showError(e.target, error);
-  //     } else {
-  //       removeError(e.target);
-  //     }
-  //   },
-  //   true
-  // );
 })();
 
 export { hasError, showError };
