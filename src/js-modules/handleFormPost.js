@@ -1,4 +1,6 @@
+/* eslint-disable no-plusplus */
 import { hasError, showError } from './handleValidation';
+
 const handleFormPost = (() => {
   const form = document.querySelector('.contact__form');
   const name = document.querySelector('.contact__input--name');
@@ -46,27 +48,27 @@ const handleFormPost = (() => {
 
   const sendForm = event => {
     event.preventDefault();
-      const url = form.getAttribute('action');
-      const method = form.getAttribute('method');
-      const data = {
-        name: name.value,
-        email: email.value,
-        message: message.value
-      };
-      const jsonData = JSON.stringify(data);
+    const url = form.getAttribute('action');
+    const method = form.getAttribute('method');
+    const data = {
+      name: name.value,
+      email: email.value,
+      message: message.value
+    };
+    const jsonData = JSON.stringify(data);
 
-      button.disabled = true;
-      button.classList.add('contact__button--sending');
+    button.disabled = true;
+    button.classList.add('contact__button--sending');
 
-      fetch(url, {
-        method: method.toUpperCase(),
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: jsonData
-      })
-        .then(res => changeFormDisplay(res))
-        .catch(err => console.log(err));
+    fetch(url, {
+      method: method.toUpperCase(),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: jsonData
+    })
+      .then(res => changeFormDisplay(res))
+      .catch(err => console.log(err));
   };
 
   form.addEventListener('submit', e => {
