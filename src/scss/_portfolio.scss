@@ -68,7 +68,7 @@
   display: block;
   @include respond-to(small) {
     top: 40%;
-}
+  }
 }
 
 .portfolio__text {
