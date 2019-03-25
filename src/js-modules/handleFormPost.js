@@ -69,7 +69,9 @@ const handleFormPost = (() => {
         .catch(err => console.log(err));
   };
 
-  form.addEventListener('submit', e => sendForm(e));
+  form.addEventListener('submit', e => {
+    validateBeforePost(e, sendForm);
+  });
 })();
 
 export default handleFormPost;
