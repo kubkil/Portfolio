@@ -1,13 +1,12 @@
 import { hasError, showError } from './handleValidation';
 const handleFormPost = (() => {
-  const preventSpam = document.querySelector('#spam-prevention');
   const form = document.querySelector('.contact__form');
-  const name = document.querySelector('#name');
-  const email = document.querySelector('#email');
-  const message = document.querySelector('#message');
-  const error = document.querySelector('.contact__error');
-  const success = document.querySelector('.contact__success');
-  const wrongAnswer = document.querySelector('.contact__wrong-answer');
+  const name = document.querySelector('.contact__input--name');
+  const email = document.querySelector('.contact__input--email');
+  const message = document.querySelector('.contact__input--message');
+  const preventSpam = document.querySelector(
+    '.contact__input--spam-prevention'
+  );
   const button = document.querySelector('.contact__button');
 
   const changeFormDisplay = response => {
