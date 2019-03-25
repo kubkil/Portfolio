@@ -11,6 +11,29 @@ const handleFormPost = (() => {
   const postSuccess = document.querySelector('.contact__post-success');
   const button = document.querySelector('.contact__button');
 
+  const validateBeforePost = (event, callback) => {
+    const fields = [name, email, message, preventSpam];
+    let error;
+    let hasErrors;
+
+    for (let i = 0; i < fields.length; i++) {
+      error = hasError(fields[i]);
+      if (error) {
+        showError(fields[i], error);
+        if (!hasErrors) {
+          hasErrors = fields[i];
+        }
+      }
+    }
+
+    if (hasErrors) {
+      event.preventDefault();
+      hasErrors.focus();
+    } else {
+      callback(event);
+    }
+  };
+
   const changeFormDisplay = response => {
     if (response.status !== 200) {
       form.style.display = 'none';
