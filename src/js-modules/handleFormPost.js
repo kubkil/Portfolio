@@ -7,6 +7,8 @@ const handleFormPost = (() => {
   const preventSpam = document.querySelector(
     '.contact__input--spam-prevention'
   );
+  const postError = document.querySelector('.contact__post-error');
+  const postSuccess = document.querySelector('.contact__post-success');
   const button = document.querySelector('.contact__button');
 
   const changeFormDisplay = response => {
