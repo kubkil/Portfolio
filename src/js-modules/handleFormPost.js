@@ -37,10 +37,10 @@ const handleFormPost = (() => {
   const changeFormDisplay = response => {
     if (response.status !== 200) {
       form.style.display = 'none';
-      error.style.display = 'block';
+      postError.style.display = 'block';
     } else {
       form.style.display = 'none';
-      success.style.display = 'block';
+      postSuccess.style.display = 'block';
     }
   };
 
