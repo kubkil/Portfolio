@@ -1,6 +1,6 @@
 .about {
   @include padding-section;
-  @include respond-to(medium) {
+  @include respond-to(large) {
     &::after {
       content: '';
       position: absolute;
