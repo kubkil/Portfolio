@@ -68,9 +68,7 @@ const handleValidation = (() => {
   };
 
   fields.forEach(field =>
-    field.addEventListener(
-      'blur',
-      e => {
+    field.addEventListener('blur', e => {
         const error = hasError(e.target);
 
         if (error) {
@@ -78,9 +76,7 @@ const handleValidation = (() => {
         } else {
           removeError(e.target);
         }
-      },
-      true
-    )
+    })
   );
 })();
 
