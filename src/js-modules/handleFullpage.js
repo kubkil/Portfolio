@@ -21,7 +21,7 @@ const handleFullpage = (() => {
   };
 
   if (matchMedia) {
-    const mq = window.matchMedia('(min-width: 769px)');
+    const mq = window.matchMedia('(min-width: 1280px)');
     mq.addListener(handleAutoHeight);
     handleAutoHeight(mq);
   }
