@@ -51,6 +51,7 @@ const handleValidation = (() => {
     field.setAttribute('aria-describedby', `aria-error-${fieldId}`);
     errorMessage.innerHTML = error;
     errorMessage.style.visibility = 'visible';
+    errorMessage.style.margin = '0.3rem 0';
   };
 
   const removeError = field => {
@@ -63,6 +64,7 @@ const handleValidation = (() => {
     );
     errorMessage.innerHTML = '';
     errorMessage.style.visibility = 'hidden';
+    errorMessage.style.margin = '0.7rem 0';
   };
 
   fields.forEach(field =>
