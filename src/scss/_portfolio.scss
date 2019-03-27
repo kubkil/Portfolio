@@ -4,7 +4,7 @@
 
 .portfolio__heading {
   text-align: center;
-  @include margin-bottom-heading;
+  margin-bottom: $headingMarginBottom;
 }
 
 .portfolio__gallery-wrapper {
