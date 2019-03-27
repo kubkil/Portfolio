@@ -4,7 +4,7 @@
 
 .contact__heading {
   text-align: center;
-  @include margin-bottom-heading;
+  margin-bottom: $headingMarginBottom;
 }
 
 .contact__form {
