@@ -69,13 +69,13 @@ const handleValidation = (() => {
 
   fields.forEach(field =>
     field.addEventListener('blur', e => {
-        const error = hasError(e.target);
+      const error = hasError(e.target);
 
-        if (error) {
-          showError(e.target, error);
-        } else {
-          removeError(e.target);
-        }
+      if (error) {
+        showError(e.target, error);
+      } else {
+        removeError(e.target);
+      }
     })
   );
 })();
