@@ -16,7 +16,7 @@
 
 .about__heading {
   text-align: center;
-  @include margin-bottom-heading;
+  margin-bottom: $headingMarginBottom;
 }
 
 .about__text {
