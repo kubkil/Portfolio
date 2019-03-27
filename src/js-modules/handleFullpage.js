@@ -14,7 +14,7 @@ const handleFullpage = (() => {
 
   const handleAutoHeight = mediaQ => {
     if (mediaQ.matches) {
-        sections.forEach(section => section.classList.remove('fp-auto-height'));
+      sections.forEach(section => section.classList.remove('fp-auto-height'));
     } else {
       sections.forEach(section => section.classList.add('fp-auto-height'));
     }
