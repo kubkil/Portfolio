@@ -1,8 +1,11 @@
 #node_modules
 node_modules/
 
-#dist
-dist/
-
 #env
 .env
+
+#main.css
+dist/main.css
+
+#index.html
+dist/index.html
