@@ -53,6 +53,12 @@
   }
 }
 
+.contact__send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact__button {
   width: 100px;
   margin: 0 auto;
