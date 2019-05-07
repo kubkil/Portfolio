@@ -247,6 +247,52 @@
                 </a>
               </div>
             </picture>
+            <picture class="portfolio__picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="./img/portfolio/elwood-w600.jpg"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="./img/portfolio/elwood-w900.jpg"
+              />
+              <img
+                class="portfolio__image"
+                src="./img/portfolio/elwood-w900.jpg"
+                alt="Screenshot of Elwood webpage"
+              />
+              <div class="portfolio__image-overlay">
+                <a
+                  class="portfolio__link"
+                  href="https://github.com/kubkil/Elwood"
+                >
+                  <i class="fab fa-github portfolio__icon"></i>
+                </a>
+              </div>
+            </picture>
+            <picture class="portfolio__picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="./img/portfolio/elwood-w600.jpg"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="./img/portfolio/elwood-w900.jpg"
+              />
+              <img
+                class="portfolio__image"
+                src="./img/portfolio/elwood-w900.jpg"
+                alt="Screenshot of Elwood webpage"
+              />
+              <div class="portfolio__image-overlay">
+                <a
+                  class="portfolio__link"
+                  href="https://github.com/kubkil/Elwood"
+                >
+                  <i class="fab fa-github portfolio__icon"></i>
+                </a>
+              </div>
+            </picture>
           </div>
         </div>
       </section>
@@ -328,7 +374,15 @@
             id="aria-error-number"
             class="contact__error contact__error--spam-prevention"
           ></span>
-          <button type="submit" class="contact__button">Send</button>
+          <div class="contact__send">
+            <button type="submit" class="contact__button">Send</button>
+            <a
+              href="https://www.linkedin.com/in/jakub-kilar"
+              class="contact__link"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </div>
         </form>
         <p class="contact__post-success">Thanks!</p>
         <p class="contact__post-error">
